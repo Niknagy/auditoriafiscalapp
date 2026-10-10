@@ -9,15 +9,17 @@ Projeto desenvolvido para a disciplina *ISW036 - Laboratório de Desenvolvimento
 
 ## **Funcionalidades do MVP**
 
-Checklist Estruturado: *Itens de auditoria organizados por categoria fiscal (Tributos Federais, Trabalhista, etc.).*
+Checklist Estruturado: Itens de auditoria organizados por categoria fiscal (Tributos Federais, Trabalhista, etc.).
 
-Captura de Evidências: *Integração com a câmera nativa para fotografar e vincular evidências diretamente ao item verificado.*
+Painel de Gestão e Segurança: Dashboard com abas de leitura livre (Pendentes, Falhas, Conformes) e "Modo Auditor" protegido por PIN para evitar manipulações indesejadas do documento.
 
-Gestão de Não Conformidades: *Registro de problemas encontrados com exigência de nível de severidade (Baixa, Média, Alta), observações e prazos de resolução.*
+Captura de Evidências: Integração com a câmera nativa (via FileProvider) para fotografar e vincular imagens diretamente ao item verificado na sessão ativa.
 
-Resumo da Auditoria: *Visão consolidada dos apontamentos pendentes, em andamento e resolvidos ao final da inspeção.*
+Gestão de Não Conformidades: Registro de problemas encontrados com exigência de nível de severidade (Baixa, Média, Alta), detalhamento de motivos e estipulação de prazos.
 
-Funcionamento Offline: *Armazenamento local de dados garantindo que o auditor não dependa de internet no local da inspeção.*
+Resumo e Acompanhamento: Visão consolidada dos totais e fluxo de status dos apontamentos (Pendente -> Em Andamento -> Resolvido).
+
+Funcionamento Offline: Armazenamento local de dados garantindo que o auditor não dependa de internet no local da inspeção.
 
 
 ## **Tecnologias e Arquitetura**
@@ -28,7 +30,8 @@ Interface de Usuário: *Jetpack Compose (UI Declarativa)*
 
 Arquitetura: *MVVM (Model-View-ViewModel)*
 
-Banco de Dados Local: *Room Database (SQLite) para persistência offline.*
+Banco de Dados Local: (desejável) *Room Database (SQLite) para persistência offline.* 
+Atualmente usando o Repository Pattern utilizando SharedPreferences e Kotlin Serialization para funcionamento offline do MVP.
 
 Conformidade: *Utilização de dados mockados/anonimizados em respeito à LGPD durante a fase de testes.*
 
@@ -48,7 +51,9 @@ Conecte um dispositivo físico via USB/Debugging ou inicie um Emulador Android (
 Clique em Run (Shift + F10) para compilar e instalar o aplicativo.
 
 
-## **Próximos Passos (Backlog Futuro)**
+Próximos Passos (Backlog Futuro)
+
+[ ] Migração da persistência local para Room Database (SQLite).
 
 [ ] Implementar notificações locais para vencimento de prazos.
 
