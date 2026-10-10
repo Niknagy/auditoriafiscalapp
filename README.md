@@ -60,3 +60,5 @@ Clique em Run (Shift + F10) para compilar e instalar o aplicativo.
 [ ] Exportação do relatório final de auditoria em formato PDF.
 
 [ ] Sincronização em nuvem e login multiusuário para integração com gestores de compliance.
+
+[ ] Exibição gráfica de acordo com a necessidade do stakeholder.
