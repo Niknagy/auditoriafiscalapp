@@ -51,7 +51,7 @@ Conecte um dispositivo físico via USB/Debugging ou inicie um Emulador Android (
 Clique em Run (Shift + F10) para compilar e instalar o aplicativo.
 
 
-Próximos Passos (Backlog Futuro)
+## **Próximos Passos (Backlog Futuro)**
 
 [ ] Migração da persistência local para Room Database (SQLite).
 
